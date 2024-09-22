@@ -1,5 +1,5 @@
 # 実行ファイルの名前
-EXECUTABLE = myProgram
+EXECUTABLE = study
 
 # ソースファイルのリスト
 SOURCES = src/Main.hs src/Math.hs src/Utils.hs
@@ -14,6 +14,10 @@ build:
 # 実行ターゲット
 run:
 	./$(EXECUTABLE)
+
+# テストターゲット
+test:
+	stack test
 
 # クリーンターゲット
 clean:

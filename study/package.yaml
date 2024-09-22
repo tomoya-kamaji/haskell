@@ -21,6 +21,7 @@ description:         Please see the README on GitHub at <https://github.com/gith
 
 dependencies:
 - base >= 4.7 && < 5
+- hspec
 
 ghc-options:
 - -Wall
@@ -47,13 +48,15 @@ executables:
     dependencies:
     - study
 
+# ここを修正してください
 tests:
   study-test:
-    main:                Spec.hs
-    source-dirs:         test
+    main: MainSpec.hs
+    source-dirs: .
     ghc-options:
     - -threaded
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
     - study
+    - hspec
