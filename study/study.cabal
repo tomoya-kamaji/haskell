@@ -28,6 +28,9 @@ library
       Lib
       Main
       Math
+      User.Domain
+      User.Repository
+      User.UseCase
       Utils
   other-modules:
       Paths_study
