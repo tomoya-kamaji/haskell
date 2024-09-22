@@ -1,4 +1,4 @@
-module Math (add, fib) where
+module Math (add, fib, isLeapYear) where
 
 -- 2つの数の和を計算する関数
 add :: Int -> Int -> Int
@@ -9,3 +9,7 @@ fib :: Int -> Int
 fib 0 = 0
 fib 1 = 1
 fib n = fib (n - 1) + fib (n - 2)
+
+-- うるう年を判定する関数
+isLeapYear :: Int -> Bool
+isLeapYear year = (year `mod` 4 == 0) && (year `mod` 100 /= 0) || (year `mod` 400 == 0)
