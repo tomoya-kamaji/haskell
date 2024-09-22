@@ -1,5 +1,6 @@
-module Main where
+module Main (main) where
 
+import Lib (someFunc)
 import Math (add, fib)
 import Utils (doubleList, listLength)
 
@@ -15,3 +16,4 @@ main = do
     putStrLn $ "Length of list: " ++ show (listLength numbers)
     
     putStrLn $ "Fibonacci of 10: " ++ show (fib 10)
+    someFunc

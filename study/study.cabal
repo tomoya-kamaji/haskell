@@ -28,7 +28,6 @@ library
       Lib
       Main
       Math
-      MathSpec
       Utils
   other-modules:
       Paths_study
